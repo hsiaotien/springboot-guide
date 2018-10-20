@@ -23,3 +23,12 @@ springboot整合springMvc示例之添加拦截器。
 
 补充： 实际上不仅仅是拦截器，其他的处理器都可以通过此方式添加，
 WebMvcConfigurer接口提供了各种add处理器的方法，相当于处理器都可以在此注册。
+
+日志说明
+
+    因为我们记录的log级别是debug，默认是显示info以上，我们需要进行配置。
+    
+    SpringBoot通过`logging.level.*=debug`来配置日志级别，*填写包名
+    
+    设置com.leyou包的日志级别为debug
+    logging.level.com.leyou=debug
